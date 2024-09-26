@@ -12,4 +12,3 @@ int bitwise_and(unsigned int a, unsigned int b);
 int bitwise_or(unsigned int a, unsigned int b);
 int bitwise_xor(unsigned int a, unsigned int b);
 int bitwise_not(unsigned int a);
-

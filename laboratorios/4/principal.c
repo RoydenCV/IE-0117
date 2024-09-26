@@ -14,6 +14,7 @@ int main() {
     unsigned int w;
     unsigned int e;
     unsigned int r;
+    unsigned int t;
   
     //Definicion de variables
     printf("Para las siguientes operaciones: \n");
@@ -53,12 +54,22 @@ int main() {
     printf("\n");
 
 
-    // Llamado a la funcion not
+    // Llamado a la funcion not para a
     r = bitwise_not(6);
     // impresion de resultado
     printf("El resultado de ~a es: %u\n", r);
     // Impresion de resultado en binario
     print_binary(r);
+    // reglon vacio
+    printf("\n");
+
+
+    // Llamado a la funcion not para b
+    t = bitwise_not(0);
+    // impresion de resultado
+    printf("El resultado de ~b es: %u\n", t);
+    // Impresion de resultado en binario
+    print_binary(t);
    
 
     return 0;

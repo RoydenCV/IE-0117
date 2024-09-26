@@ -71,14 +71,3 @@ int bitwise_not(unsigned int a) {
     return r;
 
 }
-
-
-
-
-
-
-
-
-
-
-
