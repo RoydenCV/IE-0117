@@ -1,7 +1,7 @@
 // Royden Contreras Vallejos
 // C12260
 
-
+// Listas
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -49,15 +49,13 @@ node_t *delete_first(node_t *head) {
 
 
 
-
 // Function to delete a node by value
 void delete_by_value(node_t **head, int val) {
-    // En caso que la lista este vacia. 
+    // En caso que la lista este vacia
     if (*head == NULL) return;
 
-    
-    // Como se divide entre current y previous primero debemos asegurarnos que 
-    // el primer valor (current) no sea el que se selecciono, para ello. 
+    // Como se divide entre current y previous primero debemos asegurarnos que
+    // el primer valor (current) no sea el valor que se selecciono, para ello:
     if ((*head)->val == val) {
         node_t *temp = *head;
         *head = (*head)->next;
@@ -65,13 +63,13 @@ void delete_by_value(node_t **head, int val) {
         return;
     }
 
-    // En caso que no haya sido el primer valor continuamos con los que le siguen
-    // los cuales son los que denominamos como "current"
+    // En caso que no haya sido el primer valor continuamos con los que le 
+    // siguen los cuales son los que denominamos como "current"
     node_t *current = *head;
     while (current->next != NULL) {
         if (current->next->val == val) {
             node_t *temp = current->next;
-            current->next = current->next->next;
+            current->next = current->next->next; 
             free(temp);
             return;
         }
